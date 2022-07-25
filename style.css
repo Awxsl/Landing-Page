@@ -1,3 +1,10 @@
+:root {
+    --bluish-black: #141E32;
+    --sky-blue: #545BE8;
+    --yellowish-gold: #F0C932;
+    --greyish-white: #969696;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -52,13 +59,13 @@ body {
 
 .btn {
     border-radius: 10px;
-    border: #545BE8;
+    border: var(--sky-blue);
     padding: 1.3rem 5.5rem;
     cursor: pointer;
 }
 
 .btn-filled {
-    background-color: #545BE8;
+    background-color: var(--sky-blue);
     color: #fff;
     font-weight: 700;
     margin-left: 0.6rem;
@@ -66,8 +73,8 @@ body {
 
 .btn-empty {
     background-color: transparent;
-    color: #545BE8;
-    border: 1px solid #545BE8;
+    color: var(--sky-blue);
+    border: 1px solid var(--sky-blue);
     font-weight: 700;
     margin-left: 5rem;
 }
@@ -93,12 +100,12 @@ article img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    padding-top: 7.8rem;
+    padding: 7.8rem 0 8rem 0;
 }
 
 .header-top {
     font-size: 1.8rem;
-    color: #545BE8;
+    color: var(--sky-blue);
 }
 
 h1 {
@@ -107,11 +114,11 @@ h1 {
 }
 
 h1 span {
-    color: #545BE8;
+    color: var(--sky-blue);
 }
 
 .header-description {
-    color: #969696;
+    color: var(--greyish-white);
     font-size: 1.8rem;
     margin-bottom: 3.5rem;
 }
@@ -145,6 +152,67 @@ h1 span {
     border-radius: 50%;
     color: #fff;
     margin-right: 0.5rem;
-    background-color: #F0C932;
+    background-color: var(--yellowish-gold);
     padding: 10px;
 }
+
+.pros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.expectations {
+    max-width: 70%;
+    margin-bottom: 2rem;
+}
+
+.expectations h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 4rem 0 1.5rem 0;
+}
+
+.expectations p {
+    font-size: 1.8rem;
+    color: var(--greyish-white);
+    text-align: center;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: var(--sky-blue);
+    border-radius: 10px;
+    padding: 3rem 3rem 2.5rem 2rem;
+    margin-right: 3.8rem;
+}
+
+.card h5 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card i {
+    color: var(--yellowish-gold);
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
