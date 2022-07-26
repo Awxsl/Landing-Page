@@ -277,3 +277,51 @@ h1 span {
     color: #ddd;
     font-size: 1.8rem;
 }
+
+footer {
+    background-color: #393E46;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 9rem 0;
+    column-gap: 8rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+ul h5 {
+    margin: 0.5rem 0 2rem 0;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+ul li {
+    color: #f4f4f4;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    width: 16rem;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.company-info p {
+    margin-top: 2rem;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    color: #f4f4f4;
+}
